@@ -1,10 +1,10 @@
 package racingcar.domain;
 
-public class Race {
+public class RaceCommand {
     private int carCount;
     private int tryCount;
 
-    public Race(int carCount, int tryCount) {
+    public RaceCommand(int carCount, int tryCount) {
         this.carCount = carCount;
         this.tryCount = tryCount;
     }

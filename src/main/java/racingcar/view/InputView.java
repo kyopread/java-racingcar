@@ -1,13 +1,13 @@
 package racingcar.view;
 
-import racingcar.domain.Race;
+import racingcar.domain.RaceCommand;
 
 import java.util.Scanner;
 
 public class InputView {
     private static final Scanner scanner = new Scanner(System.in);
 
-    public static Race inputRace() {
+    public static RaceCommand inputRace() {
         System.out.println("자동차 대수는 몇 대 인가요?");
         int carCount = 0;
         try {
@@ -23,6 +23,6 @@ public class InputView {
             throw new IllegalArgumentException("숫자만 입력이 가능합니다.");
         }
         System.out.println();
-        return new Race(carCount, tryCount);
+        return new RaceCommand(carCount, tryCount);
     }
 }

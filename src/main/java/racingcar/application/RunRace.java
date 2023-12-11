@@ -7,7 +7,7 @@ import racingcar.view.ResultView;
 import java.util.List;
 import java.util.stream.IntStream;
 
-public class RaceService {
+public class RunRace {
     public static List<Car> startRace(int carCount, int round) {
         System.out.println("실행 결과");
         List<Car> cars = Car.makeCarsBy(carCount);
